@@ -1,0 +1,94 @@
+/* figured out how to center fixed elements using: 
+https://stackoverflow.com/questions/2005954/center-a-positionfixed-element */
+
+body{
+  background-color: rgb(204, 203, 203);
+}
+#header{
+  position: fixed;
+  line-height: 100px;
+  top:0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.spacer{
+  width: 800px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  height: 100px;
+  padding: 20px;
+}
+#head{
+  position: fixed;
+  width: 800px;
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.active {
+  background-color: rgb(253, 223, 252);
+}
+
+.center{
+  width: 800px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  height: 100%;
+  padding: 20px;
+  
+}
+.textcenter{
+  background-color: rgb(255, 255, 255);
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100%;
+}
+.navbarAlign{
+  margin-left: -20px;
+}
+
+.navbar {
+  list-style-type: none;
+  position: fixed;
+  top: 100px;
+  width: 800px;
+  background-color: rgb(248, 182, 233);
+}
+
+.navbar li {
+  float: left;
+}
+
+/*general idea inspired by w3schools.org*/
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: rgb(182, 238, 242);
+}
+
+/* Ataken from w3schools.org*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img{
+    width: 300px;
+    height: auto
+}
+

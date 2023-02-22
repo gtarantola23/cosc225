@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Projects!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="head">
+        <h1 id="header">My Projects</h1>
+        <div class="navbarAlign">
+            <ul class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a class="active" href="">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="center">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="column">
+                <img class="img" src="linear-regression-plot.jpeg" alt="example photo">
+            </div>
+            <div class="column">
+                <h3>Swimming Time Predictor</h3>
+                <p>My goal is to use the historical times of a specific swimmer to predict their future performances.
+                    Machine learning can help achieve this goal by analyzing a swimmer's performance over time to
+                    determine whether they are dropping time or adding time and using these patterns to predict future
+                    performance. So, Machine learning algorithms can help identify a relationship between past times and
+                    future improvements based on time series data. I obtained my data from USAswimming.com, and got
+                    historical statistics of two prominent swimmers.
+
+                    This project looks at various regression models, and compares them in regards to accuracy and time.
+                    Regresssion models will allow me to have a training and testing set while predicting a continuous
+                    variable. It will be able to look at my data and see if there is a relationship. If linear
+                    regression does not work very well, I will try random forest regression because the averaging of
+                    many decision trees may cause more accurate predictions by reducing the variation in results.
+
+                    Generally, I would look for a mean square error that corresponds to 3 seconds, some math will be
+                    needed to calculate what is equivalent to three seconds after standardization. This cutoff was
+                    determined by the relative amount of time this corresponds to in swimming. A 3-second difference in
+                    any swimming event is a considerable difference in time/placement. That said, I believe it is a
+                    reasonable cutoff, as predicting a time within 3 seconds is a generally good estimate. </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
